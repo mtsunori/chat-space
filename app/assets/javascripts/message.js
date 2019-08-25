@@ -48,10 +48,3 @@ $(document).on('turbolinks:load', function(){
     })
 })
 })
-
-
-
-//   $('.messages').animate({
-//     scrollTop: position
-//   }, 300, 'swing');
-// }
