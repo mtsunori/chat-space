@@ -61,3 +61,4 @@ gem "font-awesome-rails"
 gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'rails-ujs', '~> 5.1.0.beta1'
