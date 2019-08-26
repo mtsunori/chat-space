@@ -33,18 +33,14 @@ $(document).on('turbolinks:load', function(){
       contentType: false
     })
     .done(function(data){
-      console.log('success!'); 
-      console.log(message);
       var html = buildHTML(data);
       $('.messages').append(html);
-      $('.form__message').val('');
+      $('#new_message')[0].reset();
       $('.messages').animate({scrollTop: $('.messages').get(0).scrollHeight})
+      $(".form__submit").prop('disabled', false);
     })
     .fail(function(data){
       alert('エラーが発生したためメッセージは送信できませんでした。');
-    })
-    .always(function(data){
-      $('.form__submit').prop('disabled', false);
     })
 })
 })
