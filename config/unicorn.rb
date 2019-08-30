@@ -3,7 +3,7 @@ app_path = File.expand_path('../../../', __FILE__)
 
 worker_processes 1
 # currentを指定
-working_directory "~/projects/current"
+working_directory "~/www/current"
 
 # それぞれ、sharedの中を参照するよう変更
 listen "#{app_path}/shared/tmp/sockets/unicorn.sock"
