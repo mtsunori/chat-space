@@ -66,3 +66,11 @@ gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'rails-ujs', '~> 5.1.0.beta1'
+
+group :development, :test do
+  gem 'capistrano'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano3-unicorn'
+end
